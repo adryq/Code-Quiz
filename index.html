@@ -5,8 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code-Quiz</title>
+    <link rel="stylesheet" href="./Styles/style.css" >
 </head>
 <body>
-    
+    <!-- Home Page -->
+<div class="intro-text">
+        <h1>Coding Quiz Challenge</h1>
+        <br>
+            <p> Try to answer the following code-related questions within the time limit. Keep in mind the incorrect answers will penalize your score and time by 10 seconds!</p>
+    <!-- Start Button -->
+     <div class="start-btn"><button>Start Quiz</button></div>        
+</div> 
+   <!-- Quiz Box -->
+<div class="quizbox">
+    <header>
+        <div class="title">Code Quiz Challenge</div>
+        <div class="timer">
+            <div class="timeleft">Time Left:</div>
+            <div class="timer-sec">100</div>
+        </div>
+    </header>
+        <section>
+            <div class="question">
+                <span>Question 1</span>
+            </div>
+                <div class="option-list"></div>
+                    <div class="option">Answer1</div>
+                    <div class="option">Answer2</div>
+                    <div class="option">Answer3</div>
+                    <div class="option">Answer4</div>
+        </section>
+        <footer>
+            <div class="Total-Question">
+                <span><p>1</p>of<p>6</p></span>
+            </div>
+            <button class="next-btn">Next</button>
+        </footer>
+</div>
+
+<!-- Result Box -->
+<div class="Complete">All Done! You've completed the quiz!</div>
+<div class="score-text">
+    <span> You got a 50% </span>
+</div>
+<form action="/action_page.php">
+    <label for="Initials">Enter Initials</label>:</label>
+    <input type="text" id="name" name="name" value="initial">
+ <button class="submit-btn">Submit</button>   
+
+ <!-- High Scores    -->
+ <section>
+ <div class="High-Score">High Scores</div>
+ <button class="restart-btn">Play Again</button>
+ <button class="clear-btn">Clear High Scores</button>
+</section>
+  
+<script src="./Styles/script.js"></script>
 </body>
 </html>
