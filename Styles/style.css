@@ -9,10 +9,16 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
-    background: white;
+    background-color: lavender;
     padding: 50px;
 
 }
+
+::selection {
+    color: white;
+    background-color: #3700B3;
+}
+
 
 intro-text {
     font-size: 30px;  
@@ -21,4 +27,105 @@ intro-text {
 h1 {
     text-align: center;
 }
+
+.start-btn, 
+.quizbox{    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;   
+}
+
+.start-btn button {
+    font-size: 30px;
+    color:#3700B3;
+    background-color: white;
+    border-style:solid;
+    border-color: black;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.quizbox{
+    width: 560px;
+    background: white;
+    color: black;
+    border-style: solid;
+    border-radius: 6px;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.quizbox header{
+    position: relative;
+    height: 70px;
+    padding: 0 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quizbox header .title {
+    font-size: 20px;
+    font-weight: 600;
+    color:#3700B3;  
+    
+}
+
+.quizbox header .timer{
+    color:#3700B3;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 145px; 
+}
+
+.quizbox header .timer .timeleft{
+    user-select: none;
+    font-size: 400;
+}
+
+section {
+    padding: 25px 30px 20px 30px;
+}
+
+section .question {
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+section .optionlist {
+    padding: 20px 0;
+    display: block;
+}
+
+section .optionlist .option {
+    background: #bca8e8 ;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    color: black;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+section .optionlist .option:last-child {
+    margin-bottom: 0px;   
+}
+
+section .optionlist .option:hover {
+    background: #e7e0f5 ;
+}
+
+   
+
+
 
